@@ -7,7 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
 import android.util.Log
 
-class MainActivity : AppCompatActivity(),View.OnClickListener {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
 
     override fun onClick(v: View?) {
         val intent = Intent(this, CalcApp2::class.java)
-        if (editText1.length() == 0 || editText2.length() == 0){
+        if (editText1.length() == 0 || editText2.length() == 0) {
             textView2.text = "値がセットされていません"
 
         } else {
